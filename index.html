@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyMeals</title>
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <!-- CSS File link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="main-body">
+  <!-- header of the body -->
+  <header>
+    <div id="nav-bar">
+      <div class="logo-name">
+        <a href="#"><i class="fas fa-utensils"></i> TastyMeals</a>
+      </div>
+      <div class="favourite-meal">
+        <button href="" onclick="openNav(); showFavMealList();">
+          <i class="far fa-heart"></i> Favourites
+        </button>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="mySidenav" class="sidenav">
+        <div id="fav-meal-heading" class="fav-meal-heading">
+          <a href="#" class="heading-txt">Your Favourite Meals</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+        </div>
+        <div id="favourites-body">
+          <div>
+            <span>Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <hr>
+  <!-- main section of the body -->
+  <main>
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <!-- Heading -->
+        <h1 class="title">Explore Tasty Meals</h1>
+        <blockquote>"Life is uncertain. Eat dessert first."</blockquote>
+
+        <!-- Search Box -->
+        <div class="meal-search-box" onkeyup="showMealList()">
+          <input type="search" class="search-control" placeholder="Search For Your Meal..." id="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <!-- Meal Result -->
+      <div class="meal-result" id="meal">
+        <!-- Meal List -->
+      </div>
+
+      <!-- Meal Details -->
+      <div class="meal-details">
+        <!-- Recipe Close -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Meal Content -->
+        <div id="meal-details-content">
+          <!-- Meal Recipe -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- footer section of the body -->
+  <footer>
+    <p>&copy; 2023 TastyMeals. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
